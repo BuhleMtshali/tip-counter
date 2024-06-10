@@ -8,6 +8,12 @@ function calculateTotal(event) {
   let tipPercentage = parseFloat(percentageAmountElement.value) / 100;
   let totalAmount = billAmount + billAmount * tipPercentage;
   totalAmountOutput.textContent = totalAmount.toFixed(2);
+  if (isNaN(billAmount) || isNaN(tipPercentage)) {
+    totalAmountOutput.textContent = "Please enter valid numbers.";
+    return;
+  }
+  billAmountElement.value = "";
+  percentageAmountElement.value = "";
 }
 
 let calculateButton = document.querySelector("#calculate-btn");
