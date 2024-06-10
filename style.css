@@ -17,7 +17,43 @@ label {
   padding-bottom: 20px;
 }
 .title {
-  font-size: 20px;
-  color: white;
+  font-size: 28px;
+  color: #fb8500;
   margin: 10px;
+}
+input {
+  padding: 13px 25px;
+  width: 200px;
+  border: 3px solid #fb8500;
+  border-radius: 15px;
+}
+::placeholder {
+  font-size: 14px;
+  font-style: italic;
+  color: #023047;
+}
+#total-amount {
+  color: #fb8500;
+  font-size: 20px;
+}
+.total {
+  color: #fb8500;
+  font-size: 25px;
+}
+#calculate-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 13px;
+  background-color: #ffb703;
+  color: #023047;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#calculate-btn:hover {
+  background-color: white;
+  color: #ffb703;
+  border: 3px solid #ffb703;
 }
